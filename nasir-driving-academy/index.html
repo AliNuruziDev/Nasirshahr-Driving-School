@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10253c">
+  <meta name="description" content="سامانه یکپارچه آموزشگاه رانندگی نصیرشهر؛ مدیریت آموزش، پرونده و برنامه کلاس‌ها">
+  <title>آموزشگاه رانندگی نصیرشهر | NASIR</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('nasirUiTheme') === 'dark' ? 'dark' : 'light'; }
+    catch (_) { document.documentElement.dataset.theme = 'light'; }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme-system.css?v=6">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+
+  <main id="loginScreen" class="login-screen">
+    <section class="login-brand" aria-label="معرفی آموزشگاه رانندگی نصیرشهر">
+      <div class="brand-topbar">
+        <div class="brand-lockup">
+          <div class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 28.5 11.8 18a5 5 0 0 1 4.7-3.3h15a5 5 0 0 1 4.7 3.3L40 28.5v8a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-2H15v2a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M13 25h22M16 19h16M15 30h.1M33 30h.1" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+          <div><div class="brand-name">NASIR <span>ACADEMY</span></div><div class="brand-subtitle">آموزشگاه رانندگی نصیرشهر</div></div>
+        </div>
+        <div class="brand-status"><i></i><span>سامانه یکپارچه آموزشگاه</span></div>
+      </div>
+
+      <div class="brand-copy">
+        <span class="eyebrow"><i></i> یادگیری مطمئن، شروعی هوشمند</span>
+        <h1>با اطمینان شروع کنید؛<br><em>با مهارت</em> به مقصد برسید.</h1>
+        <p>از اولین قدم ثبت‌نام تا جلسات آموزشی و آمادگی آزمون، مسیر یادگیری شما در یک فضای منظم و قابل پیگیری همراهتان است.</p>
+        <div class="brand-benefits">
+          <span><b>۰۱</b> برنامه‌ریزی منظم</span>
+          <span><b>۰۲</b> پیگیری پرونده</span>
+          <span><b>۰۳</b> آموزش هدفمند</span>
+        </div>
+      </div>
+
+      <div class="login-visual" aria-hidden="true">
+        <div class="visual-glow"></div>
+        <svg class="route-svg" viewBox="0 0 620 300" preserveAspectRatio="xMidYMid meet">
+          <path class="route-shadow" d="M24 258 C112 254 111 167 210 170 S318 247 380 162 468 47 594 52"/>
+          <path class="route-line" d="M24 258 C112 254 111 167 210 170 S318 247 380 162 468 47 594 52"/>
+          <path class="route-center" d="M24 258 C112 254 111 167 210 170 S318 247 380 162 468 47 594 52"/>
+          <circle class="route-node node-one" cx="24" cy="258" r="7"/><circle class="route-node node-two" cx="210" cy="170" r="7"/><circle class="route-node node-three" cx="380" cy="162" r="7"/><circle class="route-node node-four" cx="594" cy="52" r="7"/>
+        </svg>
+        <div class="route-label route-start"><span class="route-label-icon">۱</span><span><b>شروع مسیر</b><small>ثبت‌نام و تشکیل پرونده</small></span></div>
+        <div class="route-label route-middle"><span class="route-label-icon">۲</span><span><b>یادگیری و تمرین</b><small>جلسات آموزشی و پیگیری</small></span></div>
+        <div class="route-car"><svg viewBox="0 0 48 48"><path d="m8 28 3.7-10.2a4.8 4.8 0 0 1 4.5-3.2h11.6a4.8 4.8 0 0 1 4.5 3.2L36 28v8a2 2 0 0 1-2 2h-2v-3H12v3h-2a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 26h20M16 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="14" cy="30" r="1.8" fill="currentColor"/><circle cx="30" cy="30" r="1.8" fill="currentColor"/></svg></div>
+        <div class="visual-caption"><span class="caption-pulse"></span><span>هر قدم، نزدیک‌تر به رانندگی ایمن</span></div>
+        <div class="visual-mini-card"><div class="mini-card-icon"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/><path d="M21 12a9 9 0 1 1-2.64-6.36"/></svg></div><div><b>مسیر شما قابل پیگیری است</b><small>از ثبت‌نام تا پایان آموزش</small></div></div>
+      </div>
+
+      <div class="brand-bottom"><span class="mini-line"></span><span>آموزش اصولی <b>·</b> تجربه بهتر <b>·</b> رانندگی ایمن</span><span class="brand-bottom-mark">NASIR / ۰۱</span></div>
+    </section>
+
+    <section class="login-panel-wrap">
+      <div class="login-panel">
+        <div class="mobile-brand brand-lockup"><div class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 28.5 11.8 18a5 5 0 0 1 4.7-3.3h15a5 5 0 0 1 4.7 3.3L40 28.5v8a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-2H15v2a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M13 25h22M16 19h16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></div><div><div class="brand-name">NASIR <span>ACADEMY</span></div><div class="brand-subtitle">آموزشگاه رانندگی نصیرشهر</div></div></div>
+
+        <div class="login-toolbar ui-preference-controls" aria-label="تنظیمات نمایش">
+          <button class="preference-button theme-button" type="button" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"/></svg><span data-theme-label>تم تاریک</span></button>
+        </div>
+        <div class="login-card-topline"><span class="login-step"><i></i> دسترسی کاربران</span><span class="login-preview-tag">نسخه نمایشی</span></div>
+        <div class="login-heading">
+          <span class="eyebrow">خوش آمدید</span>
+          <h2>ورود به پنل کاربری</h2>
+          <p>برای ادامه، نوع حساب خود را انتخاب و نام نمایشی‌تان را وارد کنید.</p>
+        </div>
+
+        <div class="role-section-heading"><span>ورود به عنوان</span><small>یکی را انتخاب کنید</small></div>
+        <div class="role-picker" role="group" aria-label="انتخاب نوع حساب">
+          <button type="button" class="role-option active" data-role="student" aria-pressed="true"><span class="role-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.5 3-5.5 7-5.5s6.5 2 7 5.5"/></svg></span><span class="role-text"><b>هنرجو</b><small>پرونده و آموزش</small></span><span class="role-check">✓</span></button>
+          <button type="button" class="role-option" data-role="instructor" aria-pressed="false"><span class="role-icon"><svg viewBox="0 0 24 24"><path d="M4 20v-1.5A4.5 4.5 0 0 1 8.5 14h7a4.5 4.5 0 0 1 4.5 4.5V20M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="m16.5 5 1.5 1.5L21 3.5"/></svg></span><span class="role-text"><b>مربی</b><small>کلاس و هنرجویان</small></span><span class="role-check">✓</span></button>
+          <button type="button" class="role-option" data-role="admin" aria-pressed="false"><span class="role-icon"><svg viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2.5"/><path d="M8 9h8M8 13h3M8 16h8"/></svg></span><span class="role-text"><b>مدیریت</b><small>مدیریت آموزشگاه</small></span><span class="role-check">✓</span></button>
+        </div>
+
+        <div class="login-form-divider"><span></span><small>اطلاعات ورود آزمایشی</small><span></span></div>
+        <form id="demoLoginForm" class="login-form" novalidate>
+          <div class="login-field-head"><label id="displayNameLabel" for="displayName">نام یا شماره موبایل</label><span>ورودی موردنیاز</span></div>
+          <div class="input-wrap login-identifier-input"><span class="input-leading-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="3"/><circle cx="9.1" cy="10" r="2.1"/><path d="M5.8 16c.5-1.8 1.7-2.7 3.3-2.7s2.9.9 3.4 2.7M15.2 9h3.1M15.2 12h3.1M15.2 15h2"/></svg></span><input id="displayName" name="displayName" type="text" placeholder="نام یا شماره موبایل خود را وارد کنید" autocomplete="username" dir="auto" required maxlength="40" aria-describedby="loginNameHint"><span class="login-input-token" aria-hidden="true">ID</span></div>
+          <small id="loginNameHint" class="login-field-hint">نام، شماره موبایل یا شماره پرونده ثبت‌شده را وارد کنید.</small>
+          <small id="loginValidationMessage" class="login-validation-message" role="alert" hidden>لطفاً نام یا شماره موبایل را وارد کنید.</small>
+          <button class="primary-button login-button" type="submit"><span class="login-button-copy"><b>ورود به سامانه</b><small>ورود به محیط پیش‌نمایش</small></span><span class="login-button-arrow"><svg viewBox="0 0 24 24"><path d="M19 12H5m7 7-7-7 7-7"/></svg></span></button>
+        </form>
+        <div class="login-register-cta" id="loginRegisterCta">
+          <span>هنوز پرونده هنرجویی ندارید؟</span>
+          <button type="button" id="studentSelfRegisterButton">ثبت‌نام اولیه هنرجو</button>
+        </div>
+
+        <div class="demo-note"><span class="info-dot"><svg viewBox="0 0 24 24"><path d="M12 16v-4m0-4h.01"/><circle cx="12" cy="12" r="9"/></svg></span><span><b>محیط آزمایشی</b><small>ورود و اطلاعات این نسخه نمایشی است و هنوز احراز هویت واقعی انجام نمی‌شود.</small></span></div>
+        <div class="login-assurance"><span><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.5 3.2 7.8 7.5 9.5 4.3-1.7 7.5-5 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg> فضای اختصاصی هر نقش</span><span><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 2.3 5.6M4 18v-6h6"/><path d="M12 7v5l3 2"/></svg> دسترسی ساده و سریع</span></div>
+        <div class="login-footer"><span>NASIR DRIVING ACADEMY</span><span>نسخه پیش‌نمایش ۰.۹</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="appShell" class="app-shell hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand"><div class="brand-mark small"><svg viewBox="0 0 48 48"><path d="M8 28.5 11.8 18a5 5 0 0 1 4.7-3.3h15a5 5 0 0 1 4.7 3.3L40 28.5v8a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-2H15v2a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M13 25h22M16 19h16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></div><div><b>NASIR <small>ACADEMY</small></b><span>آموزشگاه رانندگی نصیرشهر</span></div></div>
+      <div class="sidebar-caption">منوی اصلی</div>
+      <nav id="sideNav" class="side-nav"></nav>
+      <div class="sidebar-bottom">
+        <div class="support-card"><div class="support-icon"><svg viewBox="0 0 24 24"><path d="M4 13v-2a8 8 0 0 1 16 0v2M4 13a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2Zm16 0a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2ZM12 19h3"/></svg></div><div><b>نیاز به راهنمایی دارید؟</b><span>ارتباط با آموزشگاه</span></div></div>
+        <button class="logout-button" id="logoutButton"><svg viewBox="0 0 24 24"><path d="M10 17l5-5-5-5M15 12H3M12 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"/></svg> خروج از پیش‌نمایش</button>
+      </div>
+    </aside>
+
+    <div class="main-area">
+      <header class="topbar">
+        <div class="topbar-right"><button class="icon-button menu-toggle" id="menuToggle" aria-label="باز کردن منو"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div class="breadcrumb"><span>آموزشگاه رانندگی</span><b>/</b><strong id="pageTitle">داشبورد</strong></div></div>
+        <div class="topbar-left"><div class="ui-preference-controls app-preference-controls" aria-label="تنظیمات نمایش"><button class="preference-button theme-button" type="button" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"/></svg><span data-theme-label>تم تاریک</span></button></div><button class="icon-button notification-button" id="notificationButton" aria-label="اعلان‌ها" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg><i></i></button><button class="top-user profile-shortcut" id="profileShortcut" type="button" aria-label="باز کردن پروفایل"><div class="user-copy"><b id="topUserName">کاربر آزمایشی</b><span id="topUserRole">هنرجو</span></div><div class="avatar" id="topAvatar">ک</div></button></div>
+        <div class="notification-panel hidden" id="notificationPanel" role="dialog" aria-label="اعلان‌ها"></div>
+      </header>
+
+      <main class="content-area" id="contentArea" tabindex="-1"></main>
+      <footer class="app-footer"><span>© سامانه آموزشگاه رانندگی نصیرشهر</span><span>طراحی شده برای آموزش بهتر و رانندگی ایمن</span></footer>
+    </div>
+    <div class="sidebar-scrim" id="sidebarScrim"></div>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="config.js"></script>
+  <script src="data-layer.js"></script>
+  <script src="app.js"></script>
+  <script src="appearance.js"></script>
+</body>
+</html>
