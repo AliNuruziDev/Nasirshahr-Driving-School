@@ -1,0 +1,20 @@
+{
+  "name": "آموزشگاه رانندگی نصیرشهر",
+  "short_name": "NASIR",
+  "description": "سامانه پرونده الکترونیکی و آموزشگاه رانندگی نصیرشهر",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f6f5",
+  "theme_color": "#153746",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
