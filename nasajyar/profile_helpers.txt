@@ -1,0 +1,58 @@
+const NASAJ_PROFILE_TONES = ['copper', 'blue', 'emerald', 'plum', 'graphite'];
+
+function nasajReadLocalProfiles() {
+    try {
+        const saved = JSON.parse(localStorage.getItem('nasaj_yar_profiles_v2') || 'null');
+        if (Array.isArray(saved) && saved.length) {
+            return saved.filter(item => item && item.id).map((item, index) => ({
+                id: String(item.id),
+                name: String(item.name || `کاربر ${index + 1}`).slice(0, 40),
+                city: String(item.city || 'تهران').slice(0, 40),
+                role: String(item.role || 'خریدار'),
+                phone: String(item.phone || '').slice(0, 20),
+                avatarTone: NASAJ_PROFILE_TONES.includes(item.avatarTone) ? item.avatarTone : NASAJ_PROFILE_TONES[index % NASAJ_PROFILE_TONES.length],
+                createdAt: item.createdAt || Date.now()
+            }));
+        }
+    } catch { }
+
+    let legacy = {};
+    try { legacy = JSON.parse(localStorage.getItem('nasaj_yar_profile') || '{}') || {}; } catch { }
+    return [{
+        id: 'local-owner',
+        name: String(legacy.name || 'کاربر نساج‌یار').slice(0, 40),
+        city: String(legacy.city || 'تهران').slice(0, 40),
+        role: String(legacy.role || 'خریدار'),
+        phone: String(legacy.phone || '').slice(0, 20),
+        avatarTone: NASAJ_PROFILE_TONES.includes(legacy.avatarTone) ? legacy.avatarTone : 'copper',
+        createdAt: Date.now()
+    }];
+}
+
+function nasajProfileStorageKey(baseKey, profileId) {
+    const safeId = String(profileId || 'local-owner').replace(/[^a-zA-Z0-9_-]/g, '_');
+    return `${baseKey}__${safeId}`;
+}
+
+function nasajReadProfileStorage(baseKey, profileId, fallbackValue) {
+    try {
+        let raw = localStorage.getItem(nasajProfileStorageKey(baseKey, profileId));
+        if (raw === null && String(profileId) === 'local-owner') raw = localStorage.getItem(baseKey);
+        return raw === null ? fallbackValue : JSON.parse(raw);
+    } catch { return fallbackValue; }
+}
+
+function NasajUserAvatar({ profile, compact = false }) {
+    const tone = NASAJ_PROFILE_TONES.includes(profile && profile.avatarTone) ? profile.avatarTone : 'copper';
+    const initial = String((profile && profile.name) || 'ن').trim().slice(0, 1) || 'ن';
+    return (
+        <span className={`nasaj-user-avatar tone-${tone} ${compact ? 'is-compact' : ''}`} aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="8" r="3.4" />
+                <path d="M5.2 19.2c.65-3.15 3.15-5.05 6.8-5.05s6.15 1.9 6.8 5.05" />
+            </svg>
+            <b>{initial}</b>
+            <i />
+        </span>
+    );
+}

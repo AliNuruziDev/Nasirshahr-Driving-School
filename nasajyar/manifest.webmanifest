@@ -1,0 +1,43 @@
+{
+  "id": "./",
+  "name": "نساج‌یار | پلتفرم هوشمند پارچه و نساجی",
+  "short_name": "نساج‌یار",
+  "description": "بازار هوشمند پارچه با ویترین تخصصی، شناسنامه QR، استودیوی ویرایش تصویر، شبکه خیاطان و ابزارهای نساجی",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait-primary",
+  "background_color": "#f5f6f8",
+  "theme_color": "#17243a",
+  "categories": [
+    "shopping",
+    "business",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

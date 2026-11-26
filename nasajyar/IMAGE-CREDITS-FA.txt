@@ -1,0 +1,37 @@
+اعتبار عکس‌های ویترین طرح‌دار نساج‌یار
+======================================
+
+برای ویترین جدید، ۱۸ عکس عکاسی‌شده از پارچه‌ها و منسوجات طرح‌دار انتخاب شده‌اند. عکس‌ها از صفحات Pexels انتخاب شده‌اند که در صفحهٔ هر عکس، دانلود رایگان / مجوز Free درج شده است. استفادهٔ نهایی باید مطابق شرایط مجوز Pexels باشد:
+https://www.pexels.com/license/
+
+فهرست عکس‌ها (شناسهٔ پارچه ← نوع طرح / عکاس / صفحهٔ منبع):
+
+01 — گل‌ریز آبی — Lisa Fotios — https://www.pexels.com/photo/close-up-of-a-fabric-with-a-floral-pattern-16132470/
+02 — آبسترهٔ گل‌دار رنگی — Eva Bronzini — https://www.pexels.com/photo/colorful-cloth-in-close-up-shot-7640758/
+03 — آبسترهٔ آبی و نارنجی — Đậu Photograph — https://www.pexels.com/photo/vibrant-abstract-patterned-fabric-close-up-36455706/
+04 — نقش سنتی آذری — sado lavren — https://www.pexels.com/photo/close-up-of-fabric-with-colorful-patterns-18087336/
+05 — هندسی رنگی — Cc Liu — https://www.pexels.com/photo/vibrant-abstract-textile-art-with-bold-colors-35197102/
+06 — هندسی بافت‌دار — Skylar Kang — https://www.pexels.com/photo/abstract-background-of-fabric-with-seamless-pattern-6044450/
+07 — ساتن موج‌دار چندرنگ — Rafael Minguet Delgado — https://www.pexels.com/photo/vibrant-satin-fabric-with-colorful-ripples-36208817/
+08 — دنیم پچ‌ورک — cottonbro studio — https://www.pexels.com/photo/patterns-on-denim-clothes-6764690/
+09 — طرح پلنگی و خال‌دار — Seli Seli — https://www.pexels.com/photo/close-up-of-colorful-and-patterned-fabric-6440479/
+10 — چهارخانه رنگی — Valentin Ivantsov — https://www.pexels.com/photo/colorful-plaid-fabric-texture-background-36605387/
+11 — گل‌دار آبی — Tamanna Rumee — https://www.pexels.com/photo/blue-fabric-with-floral-print-8752502/
+12 — دانتل گل‌دار — Magda Ehlers — https://www.pexels.com/photo/weaved-textile-with-intricate-design-12715938/
+13 — چهارخانه اسکاتلندی — Valentin Ivantsov — https://www.pexels.com/photo/colorful-tartan-pattern-fabric-texture-36605392/
+14 — گل‌دار صورتی — Lisa Fotios — https://www.pexels.com/photo/a-fabric-with-a-floral-pattern-16132522/
+15 — تای‌دای چندرنگ — maadhuri g — https://www.pexels.com/photo/white-red-and-blue-textile-2933650/
+16 — خال‌دار سیاه‌وسفید — Kaboompics — https://www.pexels.com/photo/white-polka-dot-pattern-on-black-fabric-4862953/
+17 — خال‌دار صورتی — Nicolas Soriano — https://www.pexels.com/photo/vibrant-pink-polka-dot-fabric-close-up-36344802/
+18 — پیزلی رنگی — Lisa Fotios — https://www.pexels.com/photo/close-up-of-a-fabric-16132469/
+
+یادآوری: این عکس‌ها نمونهٔ مرجع طرح و ظاهر پارچه‌اند و به موجودی یا محصول فروشندهٔ مشخصی اشاره ندارند. قیمت، فروشنده و بخشی از مشخصات فنی نمونه‌های ویترین همچنان نمایشی‌اند و باید پیش از خرید از فروشنده تأیید شوند.
+
+عکس‌ها از دامنهٔ images.pexels.com بارگیری می‌شوند. پس برای نخستین نمایش هر عکس اینترنت لازم است؛ Service Worker پس از بارگیری موفق، آن‌ها را در کش تصاویر همین دستگاه نگه می‌دارد. این ZIP شامل فایل باینری عکس‌ها نیست و در شبکه‌هایی که Pexels در آن‌ها مسدود باشد، نمایش عکس ممکن است انجام نشود.
+
+
+بهینه‌سازی بارگذاری ویترین (نسخه ۲۰ نوامبر ۲۰۲۶)
+--------------------------------------------------
+تصاویر اصلی Pexels در زمان درخواست از طریق wsrv.nl به WebP تبدیل می‌شوند؛ اندازه خروجی ۷۲۰ پیکسل و کیفیت ۷۴ است. این کار باعث کاهش حجم انتقال نسبت به نسخه‌های JPEG با عرض ۱۴۰۰ پیکسل می‌شود. مسیر جایگزین images.weserv.nl نیز با خروجی WebP و کیفیت کمتر تنظیم شده است.
+
+مرورگر پس از دریافت موفق هر عکس، پاسخ را در Cache Storage و کش اختصاصی nasajyar-fabric-photos-v4-webp ذخیره می‌کند. بازدیدهای بعدی همان دستگاه ابتدا از کش محلی پاسخ می‌گیرند. دریافت نخستین عکس همچنان به اتصال اینترنت و دسترسی به سرویس تصویر نیاز دارد؛ فایل باینری WebP در این ZIP به‌صورت محلی بسته‌بندی نشده است.

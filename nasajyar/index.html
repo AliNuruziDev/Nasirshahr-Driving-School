@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#17243a" />
+    <meta name="description" content="نساج‌یار؛ بازار هوشمند پارچه با شناسنامه QR، استودیوی طراحی و شبکه خیاطان، کاتالوگ تخصصی و ابزارهای نساجی" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="نساج‌یار" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+
+    <title>نساج‌یار | بازار هوشمند پارچه و نساجی</title>
+
+    <!-- فونت فارسی -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+
+    <!-- استایل‌های Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- استایل نقشه تهران -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- استایل اختصاصی پروژه -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- کتابخانه نقشه، React و Babel -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- خروجی تصویر کامل صفحه و PDF در مرورگر -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.14.0/dist/html2pdf.bundle.min.js"></script>
+    <!-- موتور محلی ساخت QR؛ بدون وابستگی به CDN -->
+    <script src="./qrcode-lite.js"></script>
+</head>
+<body>
+    <div id="root" class="w-full min-h-screen flex justify-center"></div>
+
+    <!-- کارت افزودن نساج‌یار به گوشی -->
+    <section id="pwa-install-banner" class="pwa-install-banner" dir="rtl" hidden aria-live="polite">
+        <div class="pwa-install-copy">
+            <span class="pwa-install-mark" aria-hidden="true">🧵</span>
+            <div>
+                <strong>نساج‌یار را به گوشی اضافه کن</strong>
+                <small id="pwa-install-caption">برای دسترسی سریع، نساج‌یار را مثل یک اپ نصب کن.</small>
+            </div>
+        </div>
+        <div class="pwa-install-actions">
+            <button id="pwa-install-button" type="button" class="pwa-install-button">نصب اپلیکیشن</button>
+            <button id="pwa-install-close" type="button" class="pwa-install-close" aria-label="بستن پیام نصب">×</button>
+        </div>
+    </section>
+
+    <!-- راهنمای نصب برای مرورگرهایی که پنجره نصب مستقیم ارائه نمی‌کنند -->
+    <div id="pwa-install-help" class="pwa-install-help" hidden>
+        <div class="pwa-install-dialog" role="dialog" aria-modal="true" aria-labelledby="pwa-help-title" dir="rtl">
+            <button id="pwa-help-close" class="pwa-help-x" type="button" aria-label="بستن">×</button>
+            <div class="pwa-help-icon" aria-hidden="true">📲</div>
+            <h2 id="pwa-help-title">نصب نساج‌یار روی گوشی</h2>
+            <p id="pwa-help-text"></p>
+            <button id="pwa-help-ok" type="button" class="pwa-install-button pwa-help-ok">متوجه شدم</button>
+        </div>
+    </div>
+
+    <script src="./pwa-install.js" defer></script>
+    <script src="./service-worker-register.js" defer></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
